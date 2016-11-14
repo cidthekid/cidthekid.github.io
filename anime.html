@@ -2,13 +2,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Football</title>
+<title>Anime</title>
 </head>
+ <style>
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+ul.tab li {float: left;}
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+ul.tab li a:hover {background-color: Orange;}
+ul.tab li a:focus, .active {background-color: black;}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+  </style>
 <body>
-<a href="index.html">Home</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="gaming.html">Gaming</a>
-<a href="anime.html">Anime</a>
-
+<ul class="tab">
+  <li><a href="index.html" class="index.html" onclick="index.html">Home</a></li>
+  <li><a href="portfolio.html" class="tablinks" onclick="portfolio.html">Portfolio</a></li>
+  <li><a href="gaming.html" class="tablinks" onclick="gaming.html">Gaming</a></li>
+  <li><a href="anime.html" class="tablinks" onclick="anime.html">Anime</a></li>
+</ul>
 </body>
 </html>
